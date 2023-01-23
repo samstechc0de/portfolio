@@ -1,0 +1,153 @@
+
+:root {
+    --spacing-1: 8px;
+    --spacing-2: 12px;
+    --spacing-3: 16px;
+    --spacing-4: 24px;
+  
+    --border-radius: 12px;
+  
+    --font-color: #323232;
+  }
+
+  body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0 var(--spacing-3);
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    color: white;
+  }
+
+  nav {
+    display: flex;
+    align-items: right;
+    margin-right: 10px;
+    padding: 0 10px; 
+    
+  }
+
+.logos{
+  display: flex;
+  width: 30%;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  margin: 0 5px;
+  
+}
+
+.githublogo{
+    width: auto;
+    height: 50px;
+    
+}
+
+.linkedinlogo{
+    width: auto;
+    height: 50px;       
+}
+
+/* Creates a container for the image and the paragraph */
+.main-div {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styles the paragraph */
+  .paragraph {
+    width: 100%; /* Adjusts the width of the paragraph */
+    padding: 10px; /* Adds padding to the paragraph */
+    font-size: 20px;
+  }
+  
+  /* Styles the image */
+  .main-img img {
+    width: 100%; /* Adjusts the width of the image */
+    ;
+    height: auto;
+    margin-left: 50px; /* Adds a margin to the left of the image */
+    border-radius: 20%;
+  }
+  
+
+
+#myButton{
+    
+        background-color: #4CAF50; /* Green background color */
+        color: white; /* White text color */
+        font-size: 16px; /* Increase font size */
+        padding: 12px 20px; /* Increase padding */
+        border: none; /* Remove border */
+        cursor: pointer; /* Add cursor pointer */
+        border-radius: 4px; /* Add rounded edges */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Add a subtle shadow */
+        margin-top: 10px; /* Add a margin top */
+      
+}
+
+.navbutton{
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    font-size: 13px; /* Increase font size */
+    padding: 12px 20px; /* Increase padding */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add cursor pointer */
+    border-radius: 4px; /* Add rounded edges */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Add a subtle shadow */
+    margin-top: 10px; /* Add a margin top */
+    justify-content: space-between;
+    margin: 0 10px;
+    display: flex;
+
+}
+
+.ULnav{
+ 
+    display: flex;
+    list-style-type: none;
+    padding: 2;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#name{
+    
+        border: 5px solid #4CAF50; /* Add a 5px solid green border */
+        border-radius: 10px; /* Add rounded edges to the border */
+        padding: 10px; /* Add padding to the element */
+        font-size: 28px;
+ }
+
+
+#skills{
+    border: 5px solid #4CAF50; /* Add a 5px solid green border */
+    border-radius: 10px; /* Add rounded edges to the border */
+    padding: 10px; /* Add padding to the element */
+    font-size: 28px;
+}
+
+#project{
+    border: 5px solid #4CAF50; /* Add a 5px solid green border */
+    border-radius: 10px; /* Add rounded edges to the border */
+    padding: 10px; /* Add padding to the element */
+    font-size: 28px;
+
+}
+
+
+
+.highlight{
+    font-size: 20px;
+    color:#4CAF50;
+    font-weight: bolder;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/Users/samiel-amoudi/Desktop/projects/portfolio project/contact.html" />
+    <link rel="stylesheet" href="/Users/samiel-amoudi/Desktop/projects/portfolio project/port.css"/>
+
+</head>
+<body style="background-color: gray">
+<nav>
+    <h1 id="name">Sami El-Amoudi</h1>
+    <ul class="ULnav">
+        <button class="navbutton"><li class="LInav" ><a href="/Users/samiel-amoudi/Desktop/projects/portfolio project/aboutme.html">About Me</a></li></button>
+        <button class="navbutton"><li class="LInav"><a href="/Users/samiel-amoudi/Desktop/projects/portfolio project/projects.html">Projects</a></li></button>
+        <button class="navbutton"><li class="LInav"><a href="/Users/samiel-amoudi/Desktop/projects/portfolio project/skills.html">Skills</a></li></button>
+    </ul>
+</nav>
+
+<section Id="main-info">
+<div class="main-div" style="display: flex; align-items: center;">
+    <div class="paragraph">
+        <button id="myButton">Click Me to Learn About Who I Am!</button>
+        <p id="myParagraph"></p>
+    </div>
+
+
+    <div class="main-img">
+    <img  alt="a photo of samiel-amoudi" src="/Users/samiel-amoudi/Desktop/projects/portfolio project/IMG_4223.jpg"> 
+    </div>
+</div>
+  
+</section>
+<script>
+  var button = document.getElementById("myButton");
+  var paragraph = document.getElementById("myParagraph");
+  var text = "Hey! my name is Sami El-Amoudi and As a new coder,I bring a unique perspective to the field with my background in manufacturing and production. As an entrepreneur, my goal is to bridge the gap between coding and business expectations by utilizing my understanding of the manufacturing industry to inform my approach to coding projects. I am excited to continue my coding journey and bring my diverse skill set to any team or project. I am particularly focused on web3 and AI integration, and I am eager to apply my knowledge and skills in this area to drive innovation and growth in the industry. I am excited to continue my coding journey and bring my diverse skill set and knowledge of web3 and AI integration to any team or project.";
+  var i = 0;
+
+  button.addEventListener("click", function() {
+    var typing = setInterval(function() {
+      paragraph.innerHTML += text.charAt(i);
+      i++;
+      if (i > text.length - 1) {
+        clearInterval(typing);
+      }
+    }, 20);
+  });
+</script>
+</body>
+</html>
